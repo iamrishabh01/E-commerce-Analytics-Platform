@@ -17,7 +17,6 @@ A production-ready Azure data pipeline for e-commerce analytics implementing:
 **Business Impact**: 25% increase in marketing ROI, 15% reduction in stockouts, and 60% faster ETL processing
 
 ## 📊 Architecture
-![Medallion Architecture](docs/images/architecture_diagram.png)
 
 ```mermaid
 graph LR
