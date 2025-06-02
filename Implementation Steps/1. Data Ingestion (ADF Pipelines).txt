@@ -1,0 +1,15 @@
+// ADF Pipeline: raw_data_ingestion
+{
+  "activities": [
+    {
+      "name": "Ingest_eCommerce_Data",
+      "type": "Copy",
+      "inputs": [{"referenceName": "HTTP_LinkedService"}],
+      "outputs": [{"referenceName": "BronzeContainer"}],
+      "typeProperties": {
+        "source": {"type": "HttpSource"},
+        "sink": {"type": "ParquetSink"}
+      }
+    }
+  ]
+}
