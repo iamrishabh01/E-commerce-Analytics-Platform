@@ -1,0 +1,13 @@
+adls-ecom-retail/
+├── bronze/                   # Raw ingested data
+│   ├── events/
+│   ├── products/
+│   └── users/
+├── silver/                   # Cleaned data (Delta Lake)
+│   ├── fact_events/
+│   ├── dim_products/
+│   └── dim_users/
+└── gold/                     # Business-level aggregates
+    ├── sales_kpis/
+    ├── user_behavior/
+    └── product_performance/
