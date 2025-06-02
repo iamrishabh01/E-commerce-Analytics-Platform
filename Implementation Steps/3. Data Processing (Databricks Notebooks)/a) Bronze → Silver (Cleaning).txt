@@ -1,0 +1,12 @@
+# Silver Processing Notebook
+from pyspark.sql.functions import *
+
+bronze_events = spark.read.format("delta").load("abfss://bronze@adls.dfs.core.windows.net/events")
+
+silver_events = (bronze_events
+    .filter(col("event_time") > "2019-11-01")
+    .withColumn("event_date", to_date("event_time"))
+    .dropDuplicates()
+)
+
+silver_events.write.format("delta").partitionBy("event_date").save("abfss://silver@adls.dfs.core.windows.net/fact_events")
