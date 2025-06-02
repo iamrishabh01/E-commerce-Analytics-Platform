@@ -1,0 +1,23 @@
+-- Fact Table
+CREATE TABLE fact_sales (
+    sale_id BIGINT,
+    product_id INT,
+    user_id INT,
+    event_date DATE,
+    revenue DECIMAL(10,2),
+    quantity INT
+) WITH (DISTRIBUTION = HASH(product_id));
+
+-- Dimension Tables
+CREATE TABLE dim_products (
+    product_id INT PRIMARY KEY,
+    category_name VARCHAR(50),
+    brand VARCHAR(30),
+    price_range VARCHAR(10)
+);
+
+CREATE TABLE dim_users (
+    user_id INT PRIMARY KEY,
+    location VARCHAR(100),
+    user_segment VARCHAR(20)
+);
