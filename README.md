@@ -16,25 +16,10 @@ A production-ready Azure data pipeline for e-commerce analytics implementing:
 
 **Business Impact**: 25% increase in marketing ROI, 15% reduction in stockouts, and 60% faster ETL processing
 
-## 📊 Architecture
+## 📊 [Architecture](https://github.com/iamrishabh01/E-commerce-Analytics-Platform/blob/main/Project%20Architecture.pdf)
 
-```mermaid
-graph LR
-    A[Data Sources] --> B[Azure Data Factory]
-    B --> C[ADLS Gen2 Bronze]
-    C --> D[Databricks Processing]
-    D --> E[ADLS Gen2 Silver]
-    E --> F[Feature Engineering]
-    F --> G[ADLS Gen2 Gold]
-    G --> H[Azure Synapse]
-    H --> I[Power BI]
-    
-    subgraph Azure
-        B -->|Streaming| K[Event Hubs]
-        D -->|Delta Lake| L[Unity Catalog]
-        H --> M[Star Schema]
-    end
-```
+
+
 # Overall Project Summary (STAR Format)
 🚀 **End-to-End Azure Data Engineering Solution for E-commerce Analytics**
 
