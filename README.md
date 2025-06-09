@@ -16,7 +16,7 @@ A production-ready Azure data pipeline for e-commerce analytics implementing:
 
 **Business Impact**: 25% increase in marketing ROI, 15% reduction in stockouts, and 60% faster ETL processing
 
-## 📊 [Architecture](https://github.com/iamrishabh01/E-commerce-Analytics-Platform/blob/main/Project%20Architecture.pdf)
+## 📊 [Architecture](https://github.com/iamrishabh01/E-commerce-Analytics-Platform/blob/main/Project%20Architecture1.pdf)
 
 
 
